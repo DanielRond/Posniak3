@@ -1,0 +1,5 @@
+a, b, c = map(int,input().split())
+delta = (b**2)-(4*a*c)
+raiz1 = (-b + (delta**(1/2)))/(2*a)
+raiz2 = (-b - (delta**(1/2)))/(2*a)
+print(f"{raiz1:.3f} {raiz2:.3f}")

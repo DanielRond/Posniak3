@@ -1,0 +1,7 @@
+hora_inicial , minuto_inicial , segundo_inicial = map(int,input().split())
+hora_final , minuto_final , segundo_final = map(int,input().split())
+minuto_inicial += (hora_inicial*60)
+segundo_inicial += (minuto_inicial*60)
+minuto_final += (hora_final*60)
+segundo_final += (minuto_final*60)
+print(f"{segundo_final-segundo_inicial} segundo(s)")
