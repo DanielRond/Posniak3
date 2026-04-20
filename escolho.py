@@ -1,70 +1,40 @@
 avenida = input()
 cor = input()
-lugares = ""
-"""if avenida=="protasio":#saude,SESC,REDENCAO
-    if cor=="branco":
-        lugares = "saude sesc"
-    elif cor=="tricolor":
-        lugares = "redencao"
-    elif cor=="cinza":
-        lugares = "redencao"
-    else:
-        lugares = "gatou"
-if avenida=="ipiranga":#puc,saude,parque marinha
-    if cor=="preto":
-        lugares = "puc"
-    elif cor=="tricolor":
-        lugares = "redencao"
-    elif cor=="cinza":
-        lugares = "redencao"
-    elif cor=="branco":
-        lugares = "saude"
-    else:
-        lugares = "gatou"
-if avenida=="bento":#agronomia,vale,puc
-    if cor=="preto":
-        lugares = "puc vale"
-    elif cor=="amarelo":
-        lugares = "vale"
-    elif cor =="tricolor":
-        lugares = "agronomia"
-    else:
-        lugares = "gatou"
-        """
+#ipiranga:marinha,puc,saude
+#Bento:agronomia,puc,vale
+#protasio:redencao,saude,sesc
 if cor=="preto":
-    if avenida=="ipiranga":
-        lugares = "puc"
-    elif avenida=="bento":
-        lugares = "vale puc"
-    else:
-        lugares = "gatou"
-elif cor=="amarelo":
-    if avenida=="bento":
-        lugares = "vale"
-    else:
-        lugares = "gatou"
-elif cor=="branco":
     if avenida=="protasio":
-        lugares = "saude sesc"
+        print("gatou")
     elif avenida=="ipiranga":
-        lugares = "saude"
+        print("puc")
+    elif avenida=="bento":
+        print("puc vale")
+elif cor=="amarelo":
+    if avenida=="protasio":
+        print("gatou")
+    elif avenida=="ipiranga":
+        print("gatou")
+    elif avenida=="bento":
+        print("vale")
 elif cor=="tricolor":
     if avenida=="protasio":
-        lugares = "saude"
+        print("marinha redencao")
     elif avenida=="ipiranga":
-        lugares = "marinha"
-    else:
-        lugares = "gatou"
+        print("gatou")
+    elif avenida=="bento":
+        print("agronomia")
 elif cor=="cinza":
     if avenida=="protasio":
-        lugares = "redencao"
-    else:
+        print("redencao")
+    elif avenida=="ipiranga":
+        print("gatou")
+    elif avenida=="bento":
         print("gatou")
 elif cor=="branco":
     if avenida=="protasio":
-        lugares = "saude sesc"
+        print("saude sesc")
     elif avenida=="ipiranga":
-        lugares = "saude"
-    else:
-        lugares = "gatou"
-print(lugares)
+        print("saude")
+    elif avenida=="bento":
+        print("gatou")
