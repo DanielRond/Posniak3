@@ -1,11 +1,20 @@
-testes = int(input())
-numero_p = int(input())
-player1 = input()
-player2 = input()
-for n in range(1,testes+1)
-    a,b = map(int,input().split())
-    if (a+b)%2==0
-        vencedor = player1
-    else:
-        vencedor = player2
-    print(f"Teste {n}")
+numero_p = ""
+teste = int(input)
+contador = 1
+while contador!=teste:
+    numero_p = int(input())
+    if numero_p==0:
+        break
+    player1 = input()
+    player2 = input()
+    vencedor = []
+    for n in range(numero_p):
+        a,b = map(int,input().split())
+        if (a+b)%2==0:
+            vencedor.append(player1)
+        else:
+            vencedor.append(player2)
+    print(f"Teste {contador}")
+    for nome in vencedor:
+        print(nome)
+    print()
