@@ -1,0 +1,13 @@
+[project]
+name = "posniak3"
+version = "0.1.0"
+description = "curso posniak programação competitiva"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "jupyterlab>=4.5.6",
+]
